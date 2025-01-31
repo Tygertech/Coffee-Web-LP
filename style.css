@@ -1,0 +1,1696 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+:root {
+    --button-bg-color: #f9c06a;
+    --header-color-coffee: #603809;
+    --button-text-color: #1e1e1e;
+    --supreme-bg: #ffeed8;
+    --high-bg: #fff9f1;
+    --small-text-color: #707070;
+    --logo-font: 'Clicker Script', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: playfair, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.pageOne{
+    background-image: url(media/coffee_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.pageOneOverlay{
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 0 70px;
+    padding-bottom: 100px;
+    height: 100%;  
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    padding: 20px 50px 20px 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-grow: 2;
+    font-family: var(--logo-font);
+    font-size: 2.2rem;
+}
+.checkbox{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 8;
+}
+.navMiddle{
+    padding-left: 230px;
+    font-size: 0.9rem;
+}
+.navMiddle li{
+    margin-right: 60px;
+}
+.navEnd li{
+    margin-right: 30px;
+    font-size: 0.9rem;
+}
+.navEnd .signUp{
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navEnd .signUp a{
+    padding: 15px 20px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+.pageOne article{
+    padding-top: 180px;
+    color: #fff;
+}
+.pageOne article p{
+    font-size: 1.5rem;
+}
+.pageOne article .intro{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+.pageOne article p span{
+    font-family: var(--logo-font);
+    font-size: 13.8rem;
+}
+.pageOne article button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.pageTwo {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 150px 70px;
+    background-image: url(media/coffee_blast.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.pageTwo article{
+    width: 60%;
+    padding-top: 70px;
+    position: relative;
+}
+.pageTwo article h1{
+    font-size: 3.2rem;
+    color: var(--header-color-coffee);
+    margin-bottom: 50px;
+}
+.pageTwo article p{
+    color: var(--small-text-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-right: 60px;
+    margin-bottom: 30px;
+}
+.pageTwo article button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.pageThree{
+    background-color: #fff;
+    text-align: center;
+    padding: 0 70px;
+    padding-bottom: 30px;
+}
+.pageThree h1{
+    color: var(--header-color-coffee);
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+}
+.pageThree h3{
+    color: var(--small-text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.pageThree article{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.pageThree article .card .coffeeImg{
+    width: 100%;
+    height: 240px;
+}
+.coffeeImg img{
+    width: 100%;
+    height: 100%;
+}
+.pageThree article .card .coffeeDesc{
+    padding-top: 20px;
+    border: 1px solid var(--supreme-bg);
+    border-top: none;
+    background-color: var(--high-bg);
+    position: relative;
+}
+.card .coffeeDesc h2{
+    color: var(--header-color-coffee);
+    margin-bottom: 10px;
+}
+.card .coffeeDesc h4{
+    color: var(--small-text-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.card .coffeeDesc p{
+    color: var(--header-color-coffee);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.card .coffeeDesc button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -23px;
+    right: 75px;
+}
+.pageFour{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 130px 70px 50px 70px;
+    overflow-x: hidden;
+}
+.pageFour .coffeeBlast1{
+    position: absolute;
+    right: -55px;
+    top: 0;
+}
+.pageFour h1{
+    color: var(--header-color-coffee);
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+}
+.pageFour h3{
+    color: var(--small-text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 50px; 
+}
+.pageFour article{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+article .cardItem{
+    padding: 40px 20px;
+    border: 1px solid var(--supreme-bg);
+    background-color: var(--high-bg);
+    height: 290px;
+}
+article .supreme{
+    background-color: var(--supreme-bg);
+}
+article .cardItem img{
+    margin-bottom: 30px;
+}
+article .cardItem h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+article .cardItem h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.getStarted h3{
+    margin-bottom: 10px;
+}
+.getStarted h1{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.getStarted button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.pageFive{
+    background-image: url(media/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.pageFive .overlay{
+    background-color: rgb(74, 44, 4, 0.7);
+    height: 100%;
+    display: flex;
+    background-image: url(media/coffee_bean.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 50px 70px 150px 70px;
+}
+.pageFive .overlay article{
+    width: 60%;
+}
+.pageFive .overlay article h1{
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+.pageFive .overlay article p{
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+.pageFive .overlay article button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.pageFive .overlay .coffeeCup{
+    position: relative;
+}
+.pageFive .overlay .coffeeCup img{
+    position: absolute;
+    top: 0;
+    left: 67px;
+}
+.pageSix{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+.pageSix h1{
+    color: var(--header-color-coffee);
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+.pageSix h3{
+    color: var(--small-text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 30px; 
+}
+.pageSix .rightBlast{
+    position: absolute;
+    right: -5px;
+    top: 120px;
+    z-index: 10;
+}
+.pageSix article{
+    width: 980px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid var(--supreme-bg);
+    background-color: var(--high-bg);
+    padding: 50px;
+    position: relative;
+}
+.pageSix article .quote{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.pageSix article p{
+    color: var(--small-text-color);
+    line-height: 2rem;
+    padding: 0 100px;
+    margin-bottom: 40px;
+}
+.pageSix article h2{
+    color: var(--header-color-coffee);
+    padding: 10px;
+}
+.manager{
+    width: 80px;
+    border-radius: 10px;
+}
+.pageSix article .left{
+    position: absolute;
+    left: -25px;
+    top: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--button-bg-color);
+    border: none;
+    cursor: pointer;
+}
+.pageSix article .right{
+    position: absolute;
+    right: -25px;
+    top: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--button-bg-color);
+    border: none;
+    cursor: pointer;
+}
+.pageSix .leftBlast{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+.subscribe{
+    width: 100%;
+    height: auto;
+    background-image: url(media/Rectangle14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribe .overlay{
+    background-color: rgb(74, 44, 4, 0.7);
+    text-align: center;
+    padding: 80px;
+}
+.subscribe .overlay h1{
+    color: #fff;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+.subscribe .overlay h3{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.inputContainer{
+    position: relative;
+}
+.inputContainer input{
+    color: var(--small-text-color);
+    font-size: 1.2rem;
+    width: 45%;
+    height: 54px;
+    padding: 0 20px;
+    border: none;
+}
+.inputContainer input:focus{
+    border: none;
+}
+.inputContainer .submit{
+    font-size: 1.2rem;
+    padding: 15.5px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--button-bg-color);
+}
+footer{
+    background-image: url(media/fotter_image.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+footer .footerOverlay{
+    display: flex;
+    background-color: rgb(74, 44, 4, 0.7);
+    padding: 150px 70px 50px 70px;
+    color: #fff;
+}
+footer .footerOverlay .right{
+    position: absolute;
+    right: 0;
+    top: -230px;
+}
+footer .footerOverlay .left{
+    position: absolute;
+    left: 0;
+    top: -230px;
+}
+footer .footerOverlay section ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footerOverlay section ul li{
+    margin-bottom: 20px;
+}
+footer .footerOverlay .whatWeDo{
+    width: 380px;
+    margin-right: 100px;
+}
+footer .footerOverlay .whatWeDo h5{
+    font-family: var(--logo-font);
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+footer .footerOverlay .whatWeDo p{
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 10px
+}
+footer .footerOverlay .whatWeDo .socialLinks i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+footer .footerOverlay section h1{
+    margin-bottom: 30px;
+}
+.about, .company{
+    padding-top: 23px;
+    margin-right: 100px;
+}
+.contactUs{
+    padding-top: 23px;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    nav{ width: 100%;
+        display: flex;
+    }
+    nav .checkbox {
+        display: block;
+        color: #fff;
+    }
+    nav .checkbox i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navLinks {
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        right: -100%;
+        top: 85px;
+        background-color:rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 0 0 0 50px;
+    }
+    nav #check:checked~.navLinks {
+        right: 0;
+        transition: 0.5s;
+    }
+    .navLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .navMiddle li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .navEnd li{
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .pageOne{
+        width: 100%;
+        background-position: center;
+    }
+    .pageOneOverlay{
+        padding: 0 20px;
+        padding-bottom: 50px;
+        background-color:rgba(0, 0, 0, 0.7);
+    }
+    .pageOne article p{
+        font-size: 1.8rem;
+    }
+    .pageOne article .intro{
+        font-size: 1.5rem;  
+    }
+    .pageOne article p span{
+        font-size: 9rem;
+    }
+    .pageTwo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 180px 20px;
+    }
+    .pageTwo article{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .pageTwo article h1{
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    .pageTwo article p{
+        font-size: 1.2rem;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .pageTwo figure{
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+    .pageTwo figure img{
+        width: 100%;
+    }
+    .pageThree{
+        padding: 0 20px;
+    }
+    .pageThree h1{
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    .pageThree h3{
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+    }
+    .pageThree article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .pageThree article .card{
+        margin: auto;
+    }
+    .card .coffeeDesc button{
+        position: absolute;
+        bottom: -23px;
+        right: 80px;
+    }
+    .pageFour{
+        padding: 250px 20px 50px 20px;
+    }
+    .pageFour h1{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .pageFour h3{
+        color: var(--small-text-color);
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 50px; 
+    }
+    .pageFour article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    article .cardItem{
+        width: 300px;
+    }
+    .getStarted h3{
+        margin-bottom: 10px;
+    }
+    .getStarted h1{
+        font-size: 1.5rem;
+    }
+    .pageFive{
+        background-position: center;
+    }
+    .pageFive .overlay{
+        flex-direction: column;
+        padding: 50px 20px 150px 20px;
+    }
+    .pageFive .overlay article{
+        width: 100%;
+        text-align: center;
+    }
+    .pageFive .overlay article h1{
+        font-size: 1.8rem;
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .pageFive .overlay article p{
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    .pageFive .overlay .coffeeCup{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .pageFive .overlay .coffeeCup img{
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+    .pageSix{ 
+        padding: 50px 20px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .pageSix h1{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+    .pageSix h3{
+        color: var(--small-text-color);
+        font-size: 1.1rem;
+    }
+    .pageSix .rightBlast{
+        top: 0;
+        width: 350px;
+        z-index: -1;
+    }
+    .pageSix article{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+    .pageSix article .quote img{
+        width: 50px;
+    }
+    .pageSix article p{
+        font-size: 1rem;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .manager{
+        position: absolute;
+        bottom: -40px;
+        right: 40%;
+    }
+    .pageSix article .left{
+        left: -18px;
+        top: 270px;
+        padding: 15px;
+    }
+    .pageSix article .right{
+        right: -20px;
+        top: 270px;
+        padding: 15px;
+    }
+    .pageSix .leftBlast{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .subscribe{
+        background-position: center;
+    }
+    .subscribe .overlay{
+        padding: 50px 20px;
+    }
+    .subscribe .overlay h1{
+        font-size: 1.8rem;
+    }
+    .subscribe .overlay h3{
+        font-size: 1.1rem;
+    }
+    .inputContainer{
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .inputContainer input{
+        color: var(--small-text-color);
+        font-size: 1rem;
+        width: 60%;
+        height: 54px;
+        padding: 0 20px;
+        border: none;
+    }
+    .inputContainer .submit{
+        font-size: 1.1rem;
+        padding: 16px 20px 17px 20px;
+    }
+    footer{
+        background-position: bottom center;
+        background-repeat: repeat-y;
+    }
+    footer .footerOverlay{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 150px 20px 50px 20px;
+        gap: 10px;
+    }
+    footer .footerOverlay .whatWeDo{
+        width: 100%;
+        grid-column: 1/3;  
+        margin-right: 0;
+    }
+    footer .footerOverlay .whatWeDo h5{
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+    footer .footerOverlay .whatWeDo .socialLinks i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    footer .footerOverlay section h1{
+        margin-bottom: 30px;
+    }
+    .about, .company{
+        padding-top: 20px;
+        margin-right: 0;
+    }
+    .contactUs{
+        padding-top: 20px;
+        width: 100%;
+        grid-column: 1/3;
+    }    
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    nav{ width: 100%;
+        display: flex;
+    }
+    nav .checkbox {
+        display: block;
+        color: #fff;
+    }
+    nav .checkbox i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navLinks {
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        right: -100%;
+        top: 85px;
+        background-color:rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 0 0 0 50px;
+    }
+    nav #check:checked~.navLinks {
+        right: 0;
+        transition: 0.5s;
+    }
+    .navLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .navMiddle li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .navEnd li{
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .pageOne{
+        width: 100%;
+        background-position: center;
+    }
+    .pageOneOverlay{
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+    .pageOne article p{
+        font-size: 2.5rem;
+    }
+    .pageOne article .intro{
+        font-size: 1.7rem;  
+    }
+    .pageOne article p span{
+        font-size: 12.5rem;
+    }
+    .pageTwo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 180px 20px;
+    }
+    .pageTwo article{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .pageTwo article h1{
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    .pageTwo article p{
+        font-size: 1.3rem;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .pageTwo figure{
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+    .pageTwo figure img{
+        width: 100%;
+    }
+    .pageThree{
+        padding: 0 20px;
+    }
+    .pageThree h1{
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    .pageThree h3{
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+    .pageThree article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .card .coffeeDesc button{
+        position: absolute;
+        bottom: -23px;
+        right: 80px;
+    }
+    .pageFour{
+        padding: 250px 20px 50px 20px;
+    }
+    .pageFour h1{
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+    }
+    .pageFour h3{
+        font-size: 1.3rem;
+        margin-bottom: 50px; 
+    }
+    .pageFour article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    article .cardItem{
+        width: 300px;
+    }
+    .getStarted h3{
+        margin-bottom: 10px;
+    }
+    .getStarted h1{
+        font-size: 1.8rem;
+    }
+    .pageFive{
+        background-position: center;
+    }
+    .pageFive .overlay{
+        flex-direction: column;
+        padding: 50px 20px 150px 20px;
+    }
+    .pageFive .overlay article{
+        width: 100%;
+        text-align: center;
+    }
+    .pageFive .overlay article h1{
+        font-size: 2.3rem;
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .pageFive .overlay article p{
+        font-size: 1.3rem;
+    }
+    .pageFive .overlay .coffeeCup{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .pageFive .overlay .coffeeCup img{
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    .pageSix{ 
+        padding: 50px 20px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .pageSix h1{
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+    .pageSix h3{
+        font-size: 1.3rem;
+    }
+    .pageSix .rightBlast{
+        top: 0;
+        width: 350px;
+        z-index: -1;
+    }
+    .pageSix article{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+    .pageSix article .quote img{
+        width: 50px;
+    }
+    .pageSix article p{
+        font-size: 1rem;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .manager{
+        position: absolute;
+        bottom: -40px;
+        right: 40%;
+    }
+    .pageSix article .left{
+        left: -18px;
+        top: 50%;
+        padding: 15px;
+    }
+    .pageSix article .right{
+        right: -20px;
+        top: 50%;
+        padding: 15px;
+    }
+    .pageSix .leftBlast{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .subscribe{
+        background-position: center;
+    }
+    .subscribe .overlay{
+        padding: 50px 20px;
+    }
+    .subscribe .overlay h1{
+        font-size: 2.5rem;
+    }
+    .subscribe .overlay h3{
+        font-size: 1.3rem;
+    }
+    .inputContainer{
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .inputContainer input{
+        color: var(--small-text-color);
+        font-size: 1.2rem;
+        width: 60%;
+        height: 54px;
+        padding: 0 20px;
+        border: none;
+    }
+    .inputContainer .submit{
+        font-size: 1.2rem;
+        padding: 16px 20px 17px 20px;
+    }
+    footer{
+        background-position: bottom center;
+        background-repeat: repeat-y;
+    }
+    footer .footerOverlay{
+        padding: 150px 20px 50px 20px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    footer .footerOverlay .whatWeDo{
+        width: 100%;  
+        margin-right: 0;
+    }
+    footer .footerOverlay .whatWeDo h5{
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+    footer .footerOverlay .whatWeDo .socialLinks i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    footer .footerOverlay section h1{
+        margin-bottom: 30px;
+    }
+    .about, .company{
+        padding-top: 20px;
+        margin-right: 0;
+    }
+    .contactUs{
+        padding-top: 20px;
+        width: fit-content;
+    }    
+}
+@media screen and (min-width: 769px) and (max-width: 834px) {
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    nav{ width: 100%;
+        display: flex;
+    }
+    nav .checkbox {
+        display: block;
+        color: #fff;
+    }
+    nav .checkbox i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navLinks {
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        right: -100%;
+        top: 85px;
+        background-color:rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 0 0 0 50px;
+    }
+    nav #check:checked~.navLinks {
+        right: 0;
+        transition: 0.5s;
+    }
+    .navLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .navMiddle li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .navEnd li{
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .pageOne{
+        width: 100%;
+        background-position: center;
+    }
+    .pageOneOverlay{
+        padding: 0 40px;
+        padding-bottom: 50px;
+    }
+    .pageTwo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px 180px 40px;
+    }
+    .pageTwo article{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .pageTwo article h1{
+        margin-bottom: 30px;
+    }
+    .pageTwo article p{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .pageTwo figure{
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+    .pageThree{
+        padding: 0 40px;
+    }
+    .pageThree h1{
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+    .pageThree h3{
+        margin-bottom: 50px;
+    }
+    .pageThree article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .card .coffeeDesc button{
+        position: absolute;
+        bottom: -23px;
+        right: 80px;
+    }
+    .pageFour{
+        padding: 250px 40px 50px 40px;
+    }
+    .pageFour h1{
+        margin-bottom: 20px;
+    }
+    .pageFour h3{
+        margin-bottom: 50px; 
+    }
+    .pageFour article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    article .cardItem{
+        width: 300px;
+    }
+    .getStarted h3{
+        margin-bottom: 10px;
+    }
+    .pageFive{
+        background-position: center;
+    }
+    .pageFive .overlay{
+        flex-direction: column;
+        padding: 50px 40px 150px 40px;
+    }
+    .pageFive .overlay article{
+        width: 100%;
+        text-align: center;
+    }
+    .pageFive .overlay article h1{
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .pageFive .overlay .coffeeCup{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .pageFive .overlay .coffeeCup img{
+        position: relative;
+        top: 50px;
+        left: 30%;
+    }
+    .pageSix{ 
+        padding: 50px 40px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .pageSix h1{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .pageSix .rightBlast{
+        top: 200px;
+        width: 350px;
+        z-index: 1;
+    }
+    .pageSix article{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+    .pageSix article .quote img{
+        width: 100px;
+    }
+    .pageSix article p{
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .manager{
+        position: absolute;
+        bottom: -40px;
+        right: 45%;
+    }
+    .pageSix article .left{
+        left: -25px;
+        top: 50%;
+        padding: 20px;
+    }
+    .pageSix article .right{
+        right: -25px;
+        top: 50%;
+        padding: 20px;
+    }
+    .pageSix .leftBlast{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .subscribe{
+        background-position: center;
+    }
+    .subscribe .overlay{
+        padding: 50px 40px;
+    }
+    .subscribe .overlay h1{
+        font-size: 2.5rem;
+    }
+    .inputContainer{
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .inputContainer input{
+        width: 60%;
+        padding: 0 20px;
+        border: none;
+    }
+    footer{
+        background-position: bottom center;
+    }
+    footer .footerOverlay{
+        padding: 150px 40px 50px 40px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    footer .footerOverlay .whatWeDo{
+        width: 100%;  
+        margin-right: 0;
+    }
+    footer .footerOverlay .whatWeDo h5{
+        margin-bottom: 10px;
+    }
+    footer .footerOverlay .whatWeDo .socialLinks i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    footer .footerOverlay section h1{
+        margin-bottom: 30px;
+    }
+    .about, .company{
+        padding-top: 20px;
+        margin-right: 0;
+    }
+    .contactUs{
+        padding-top: 20px;
+        width: fit-content;
+    }    
+}
+@media screen and (min-width: 835px) and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    nav{ width: 100%;
+        display: flex;
+    }
+    nav .checkbox {
+        display: block;
+        color: #fff;
+    }
+    nav .checkbox i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navLinks {
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        right: -100%;
+        top: 85px;
+        background-color:rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 0 0 0 50px;
+    }
+    nav #check:checked~.navLinks {
+        right: 0;
+        transition: 0.5s;
+    }
+    .navLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .navMiddle li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .navEnd li{
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .pageOne{
+        width: 100%;
+        background-position: center;
+    }
+    .pageOneOverlay{
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+    .pageTwo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 180px 50px;
+    }
+    .pageTwo article{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .pageTwo article h1{
+        margin-bottom: 30px;
+    }
+    .pageTwo article p{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .pageTwo figure{
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+    .pageThree{
+        padding: 0 50px;
+    }
+    .pageThree h1{
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+    .pageThree h3{
+        margin-bottom: 50px;
+    }
+    .pageThree article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .card .coffeeDesc button{
+        position: absolute;
+        bottom: -23px;
+        right: 80px;
+    }
+    .pageFour{
+        padding: 250px 50px 50px 50px;
+    }
+    .pageFour h1{
+        margin-bottom: 20px;
+    }
+    .pageFour h3{
+        margin-bottom: 50px; 
+    }
+    .pageFour article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    article .cardItem{
+        width: 300px;
+    }
+    .getStarted h3{
+        margin-bottom: 10px;
+    }
+    .pageFive{
+        background-position: center;
+    }
+    .pageFive .overlay{
+        /* flex-direction: column; */
+        padding: 50px 50px 150px 50px;
+    }
+    .pageFive .overlay article{
+        width: 100%;
+    }
+    .pageFive .overlay article h1{
+        font-size: 2.5rem;
+        padding-right: 0;
+    }
+    .pageFive .overlay .coffeeCup{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .pageFive .overlay .coffeeCup img{
+        position: absolute;
+        left: 0;
+    }
+    .pageSix{ 
+        padding: 50px 50px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .pageSix h1{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .pageSix .rightBlast{
+        top: 200px;
+        width: 350px;
+        z-index: 1;
+    }
+    .pageSix article{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+    .pageSix article .quote img{
+        width: 100px;
+    }
+    .pageSix article p{
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .manager{
+        position: absolute;
+        bottom: -40px;
+        right: 45%;
+    }
+    .pageSix article .left{
+        left: -25px;
+        top: 50%;
+        padding: 20px;
+    }
+    .pageSix article .right{
+        right: -25px;
+        top: 50%;
+        padding: 20px;
+    }
+    .pageSix .leftBlast{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .subscribe{
+        background-position: center;
+    }
+    .subscribe .overlay{
+        padding: 50px 50px;
+    }
+    .subscribe .overlay h1{
+        font-size: 2.5rem;
+    }
+    .inputContainer{
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .inputContainer input{
+        width: 60%;
+        padding: 0 20px;
+        border: none;
+    }
+    footer{
+        background-position: bottom center;
+    }
+    footer .footerOverlay{
+        padding: 150px 40px 50px 40px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer .footerOverlay .whatWeDo{
+        margin-right: 0;
+    }
+    footer .footerOverlay .whatWeDo h5{
+        margin-bottom: 10px;
+    }
+    footer .footerOverlay .whatWeDo .socialLinks i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    footer .footerOverlay section h1{
+        margin-bottom: 30px;
+    }
+    .about, .company{
+        padding-top: 20px;
+        margin-right: 0;
+    }
+    .contactUs{
+        padding-top: 20px;
+        width: fit-content;
+    }    
+}
+@media screen and (min-width: 1025px) and (max-width: 1145px){
+    header {
+        padding: 20px 30px 20px 50px;
+    }
+    .navMiddle{
+        padding-left: 180px;
+        font-size: 0.9rem;
+    }
+    .navMiddle li{
+        margin-right: 40px;
+    }
+    .navEnd li{
+        margin-right: 30px;
+    }
+    .pageOneOverlay{
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+    .pageTwo {
+        padding: 30px 50px 150px 50px;
+    }
+    .pageTwo article h1{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+    .pageThree{
+        padding: 0 50px;
+    }
+    .pageThree article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    .pageFour{
+        padding: 120px 50px 50px 50px;
+    }
+    .pageFour article{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pageSix{ 
+        padding: 100px 50px;
+    }
+    .pageSix article{
+        width: 100%;
+        height: 500px;
+        padding: 50px 20px;
+    }
+    footer .footerOverlay{
+        padding: 150px 50px 50px 50px;
+    }
+    footer .footerOverlay .whatWeDo{
+        margin-right: 0px;
+    }
+    .about, .company{
+        padding-top: 23px;
+        margin-right: 20px;
+    }
+}
